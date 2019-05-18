@@ -68,6 +68,13 @@ public class ClienteDAO {
 		
 	}
 	
+	public List<Cliente> getClientes(){
+		
+		return lista();
+		
+		
+	}
+	
 	public Cliente obter(Long id){
 		Cliente cliente = null;
 		String sql = "select * from clientes where Id=?";

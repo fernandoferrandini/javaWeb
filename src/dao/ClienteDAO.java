@@ -116,6 +116,20 @@ public class ClienteDAO {
 		}
 		
 	}
+	public void deleta(Cliente cliente) {
+		String sql = "delete from Clientes where Id=?";
+		try {
+			PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setLong(1, cliente.getId());
+			stmt.execute();
+			stmt.close();
+		}catch (Exception e) {
+			// TODO: handle exception
+			throw new RuntimeException(e);
+		}
+			
+			
+	}
 	
 	
 	

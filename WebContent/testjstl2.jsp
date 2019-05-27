@@ -8,7 +8,9 @@
 <title>TESTE JSTL 2</title>
 </head>
 <body>
-
+	<a href="insertcliente3.jsp">Inserir novo cliente</a>
+	<br/>
+	<br/>
 	<table>
 		<c:forEach var="cliente" items="${clientes}">
 			<tr>

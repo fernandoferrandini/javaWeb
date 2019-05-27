@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>Cliente deletado com sucesso!</h1>
-<a href="testjstl.jsp">Voltar pra Listagem de Clientes</a>
+<a href="testjstl2.jsp">Voltar pra Listagem de Clientes</a>
 </body>
 </html>

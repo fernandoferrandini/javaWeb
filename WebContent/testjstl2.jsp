@@ -24,9 +24,7 @@
 				
 				<td>${cliente.endereco}</td>
 				<td><a href="mvc?regra=RegraDeleteClientes&id=${cliente.id}">Deletar</a></td>
-				
-				<td>${cliente.endereco}</td>
-				<td><a href="#">Atualizar</a></td>
+				<td><a href="mvc?regra=RegraEditaCliente&id=${cliente.id}">Atualizar</a></td>
 			</tr>
 		</c:forEach>
 

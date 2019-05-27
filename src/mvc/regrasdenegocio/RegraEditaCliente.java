@@ -5,15 +5,17 @@ import javax.servlet.http.HttpServletResponse;
 
 import dao.ClienteDAO;
 
-public class RegraGetClientes implements Regra{
+public class RegraEditaCliente implements Regra{
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		// TODO Auto-generated method stub
 		
-		request.setAttribute("clientes", new ClienteDAO().getClientes());
+		Long id = Long.parseLong(request.getParameter("id"));
 		
-		return "testjstl2.jsp";
+		request.setAttribute("cliente", new ClienteDAO().obter(id));
 		
+		return "editacliente.jsp";
 	}
 
 }

@@ -17,7 +17,7 @@ public class RegraDeleteClientes implements Regra {
 		if(cliente != null) {
 			dao.deleta(cliente);
 			System.out.println("Cliente Id: " + cliente.getId().toString() + " deletado!");
-			return "testjstl2.jsp";
+			return "/mvc?regra=RegraGetClientes";
 		}else return "clientenaoencontrado.jsp";
 		
 	}
